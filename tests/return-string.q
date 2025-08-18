@@ -1,10 +1,11 @@
 import io
 
 main() {
-	s := hello()
+	s := 123
+	_(s)
+	s := "bar"
 	io.write(s)
 }
 
-hello() -> string {
-	return "Hello\n"
-}
+_(_ any) {}
+
